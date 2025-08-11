@@ -1,7 +1,3 @@
-Got it — I’ll give you a **properly formatted** `README.md` file that you can **directly copy and paste** into your project.
-It will include explanations, examples, and your middleware/async actions demo.
-
-````markdown
 # Redux Tutorial – Basics, Middleware, and Async Actions
 
 This project demonstrates the basics of **Redux**, **middleware**, and handling **asynchronous actions** using `redux-thunk`.
