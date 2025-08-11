@@ -2,7 +2,10 @@
 
 //for js
 const redux = require('redux')
+const reduxLogger = require('redux-logger')
 const createStore = redux.createStore;
+const logger = reduxLogger.createLogger();
+const applyMiddleware = redux.applyMiddleware;
 
 const BUY_CAKE = "BUY_CAKE"
 const BUY_ICECREAM = "BUY_ICECREAM"
@@ -64,11 +67,11 @@ const reducer = (state=initialState,action) =>{
 
 }
 
-const store = createStore(reducer); //redux store holding application state
+const store = createStore(reducer,applyMiddleware(logger)); //redux store holding application state
 
 console.log('initial state',store.getState());
 
-const unsubscribe=store.subscribe(()=>console.log('Updated state',store.getState()));
+const unsubscribe=store.subscribe(()=>{});
 
 store.dispatch(buyCake())
 store.dispatch(buyCake())
