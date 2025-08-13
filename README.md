@@ -209,10 +209,3 @@ When you run `node asyncActions.js`, you will see:
 
 * [Redux Official Docs](https://redux.js.org/)
 * [Redux Thunk Docs](https://github.com/reduxjs/redux-thunk)
-
-```
-
-This one is **complete, structured, and directly usable** in your project.  
-
-If you want, I can also make a **diagram** showing the flow of Redux with middleware for this README so it’s even more visual.
-```
